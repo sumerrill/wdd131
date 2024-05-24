@@ -39,8 +39,8 @@ nav ul li a:hover {
 
 .main {
     padding: 20px;
-    max-width: 600px; /* Limited width */
-    margin: 0 auto; /* Centering */
+    max-width: 600px; 
+    margin: 0 auto; 
 }
 
 h2 {
@@ -78,7 +78,7 @@ footer p {
     border: none;
     font-size: 24px;
     color: white;
-    display: none; /* Hide by default, shown only in mobile view */
+    display: none; 
 }
 
 #navMenu.active {
@@ -87,15 +87,15 @@ footer p {
 
 @media (max-width: 600px) {
     #hamburger {
-        display: block; /* Show the hamburger menu in mobile view */
+        display: block; 
     }
 
     #navMenu {
-        display: none; /* Hide the menu initially in mobile view */
+        display: none; 
     }
 
     #navMenu.active {
-        display: block; /* Show when hamburger is clicked */
+        display: block; 
     }
 
     nav ul {

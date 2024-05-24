@@ -7,17 +7,17 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('lastModified').textContent = formattedDate;
 });
 
-    // Hamburger menu functionality
+    
     const navMenu = document.getElementById('navMenu');
     const hamburger = document.getElementById('hamburger');
 
     hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active'); // Toggle visibility of nav menu
-        // Change hamburger icon to 'X' when open
+        navMenu.classList.toggle('active'); 
+        
         if (navMenu.classList.contains('active')) {
-            hamburger.innerHTML = '&times;'; // 'X' symbol
+            hamburger.innerHTML = '&times;'; 
         } else {
-            hamburger.innerHTML = '&#9776;'; // Hamburger symbol
+            hamburger.innerHTML = '&#9776;'; 
         }
     });
 

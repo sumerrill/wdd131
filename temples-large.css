@@ -13,8 +13,7 @@
     border: none;
     font-size: 24px;
     color: white;
-    display: none; /* Hide by default, shown only in mobile view */
-}
+    display: none; }
 
 #navMenu.active {
     display: block;
@@ -22,15 +21,15 @@
 
 @media (max-width: 600px) {
     #hamburger {
-        display: block; /* Show the hamburger menu in mobile view */
+        display: block; 
     }
 
     #navMenu {
-        display: none; /* Hide the menu initially in mobile view */
+        display: none; 
     }
 
     #navMenu.active {
-        display: block; /* Show when hamburger is clicked */
+        display: block; 
     }
 
     nav ul {
