@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -52,13 +53,12 @@ nav a:hover {
 
 .card {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: space-around;
+    width: 100%;
     margin-top: 20px;
 }
 
-.card h1,
-.aside h2 {
+.card h1, .aside h2 {
     text-align: center;
 }
 
