@@ -1,0 +1,109 @@
+body {
+    font-family: 'Your Font Family', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #360c66;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.main {
+    padding: 20px;
+    max-width: 600px; /* Limited width */
+    margin: 0 auto; /* Centering */
+}
+
+h2 {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: #360c66;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    display: none; /* Hide by default, shown only in mobile view */
+}
+
+#navMenu.active {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    #hamburger {
+        display: block; /* Show the hamburger menu in mobile view */
+    }
+
+    #navMenu {
+        display: none; /* Hide the menu initially in mobile view */
+    }
+
+    #navMenu.active {
+        display: block; /* Show when hamburger is clicked */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
