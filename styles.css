@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #160a08; /* Red */
+    --secondary-color: #a89d5a; /* Green */
+    --text-color: #1d1111; /* White */
+    --background-color: #e9e8e3; /* Light grey */
+    --font-main: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative; /* Establishes a positioning context for positioning the text */
+    width: 100%; /* Set the width to the desired value or make it responsive */
+    height: 100%; /* Adjust the height as needed */
+}
+
+.background-image {
+    width: 100%; /* Ensures the image covers the container */
+    height: 100%; /* Ensures the image covers the container */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.datatext {
+    position: absolute; /* Positions the text over the image */
+    top: 35%; /* Centers the text vertically */
+    right: 60%; /* Centers the text horizontally */
+    transform: translate(-50%, -50%); /* Offset the text by half its width and height, centering it exactly */
+    color: rgb(14, 11, 11); /* Text color */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the text bold */
+}
+
+.weathertext {
+    position: absolute; /* Positions the text over the image */
+    top: 35%; /* Centers the text vertically */
+    left: 80%; /* Centers the text horizontally */
+    transform: translate(-50%, -50%); /* Offset the text by half its width and height, centering it exactly */
+    color: rgb(14, 11, 11); /* Text color */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the text bold */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.data-section, .weather-section {
+    background-color: var (--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    flex-basis: 20%;
+}
+
+.image-section {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .data-section, .weather-section, .image-section {
+        flex-basis: 100%;
+    }
+}
