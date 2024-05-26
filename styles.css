@@ -78,17 +78,42 @@ footer {
     padding: 10px;
 }
 
-@media (max-width: 600px) {
-    .data-section, .weather-section {   
-        display: flex;
-        flex-direction: row;
-    }
-    .datatext, .weathertext {
-        display: flex;
-        flex-direction: row;
-    }
+/* Styles for tablets and up */
+@media (min-width: 768px) {
     body {
-        display: flex;
-        flex-direction: row;
+        padding: 20px;
+        font-size: 16px;  /* Larger font for tablets and desktops */
+    }
+
+    .image-container {
+        height: 400px; /* Taller for larger screens */
+    }
+
+    .text-overlay, .datatext, .weathertext {
+        font-size: 18px; /* Larger text for better readability */
+    }
+
+    .main {
+        flex-direction: row; /* Horizontal layout for larger views */
+    }
+
+    .data-section, .weather-section {
+        width: 50%; /* Each section takes half the width on tablets */
+        padding: 20px;
+    }
+}
+
+/* Styles for desktops and larger screens */
+@media (min-width: 1024px) {
+    .image-container {
+        height: 500px; /* Even taller for desktops */
+    }
+
+    .text-overlay, .datatext, .weathertext {
+        font-size: 20px; /* Further increase for desktops */
+    }
+
+    .data-section, .weather-section {
+        width: 25%; /* More sections or larger spacing on desktop */
     }
 }
