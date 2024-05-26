@@ -86,10 +86,6 @@ footer {
         transform: translate(-50%, -50%);
     }
 
-    .weathertext {
-        flex-direction: column;
-    }
-
     .data-section, .weather-section {
         flex-basis: 100%; /* Each section takes full width */
         padding: 15px; /* Slightly more padding */ 
