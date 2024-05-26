@@ -60,17 +60,6 @@ header {
     flex-basis: 20%;
 }
 
-.image-section {
-    flex-grow: 1;
-    padding: 20px;
-}
-
-.image-section img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 footer {
     background-color: var(--secondary-color);
     color: var(--text-color);
@@ -81,7 +70,6 @@ footer {
 @media (max-width: 600px) {
     body {
         font-size: 14px; /* Increase base font size for better readability */
-        flex-direction: column;
     }
 
     header, footer {
@@ -96,22 +84,15 @@ footer {
     .datatext, .weathertext {
         font-size: 16px; /* Larger font for better readability */
         transform: translate(-50%, -50%);
-        flex-direction: column;
     }
 
     .weathertext {
         top: 50%; /* Adjust position to avoid overlap */
         left: 50%;
-        flex-direction: column;
     }
 
     .data-section, .weather-section {
         flex-basis: 100%; /* Each section takes full width */
         padding: 15px; /* Slightly more padding */
-        flex-direction: column;
-    }
-
-    .image-section {
-        order: -1; /* Bring image section to the top */
     }
 }
