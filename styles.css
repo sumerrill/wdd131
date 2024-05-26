@@ -90,12 +90,12 @@ footer {
 
     .image-container {
         height: 300px; /* Less height as screen real estate is more valuable */
-        flex-direction: column;
     }
 
     .datatext, .weathertext {
         font-size: 16px; /* Larger font for better readability */
         transform: translate(-50%, -50%);
+        flex-direction: column;
     }
 
     .weathertext {
@@ -106,6 +106,7 @@ footer {
     .data-section, .weather-section {
         flex-basis: 100%; /* Each section takes full width */
         padding: 15px; /* Slightly more padding */
+        flex-direction: column;
     }
 
     .image-section {
