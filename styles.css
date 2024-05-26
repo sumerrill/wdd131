@@ -81,13 +81,14 @@ footer {
 @media (max-width: 600px) {
     .data-section, .weather-section {   
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     .datatext, .weathertext {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     body {
-    display: flex;
+        display: flex;
+        flex-direction: row;
     }
 }
