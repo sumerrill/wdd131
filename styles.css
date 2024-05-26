@@ -78,42 +78,40 @@ footer {
     padding: 10px;
 }
 
-/* Styles for tablets and up */
-@media (min-width: 768px) {
+@media (max-width: 600px) {
     body {
-        padding: 20px;
-        font-size: 16px;  /* Larger font for tablets and desktops */
+        font-size: 14px; /* Increase base font size for better readability */
+    }
+
+    header, footer {
+        padding: 8px; /* Smaller padding */
+        font-size: 16px; /* Larger text in headers and footers for readability */
     }
 
     .image-container {
-        height: 400px; /* Taller for larger screens */
+        height: 300px; /* Less height as screen real estate is more valuable */
     }
 
-    .text-overlay, .datatext, .weathertext {
-        font-size: 18px; /* Larger text for better readability */
+    .datatext, .weathertext {
+        font-size: 16px; /* Larger font for better readability */
+        transform: translate(-50%, -50%);
     }
 
-    .main {
-        flex-direction: row; /* Horizontal layout for larger views */
+    .weathertext {
+        top: 50%; /* Adjust position to avoid overlap */
+        left: 50%;
     }
 
-    .data-section, .weather-section {
-        width: 50%; /* Each section takes half the width on tablets */
-        padding: 20px;
-    }
-}
-
-/* Styles for desktops and larger screens */
-@media (min-width: 1024px) {
-    .image-container {
-        height: 500px; /* Even taller for desktops */
-    }
-
-    .text-overlay, .datatext, .weathertext {
-        font-size: 20px; /* Further increase for desktops */
+    main {
+        flex-direction: column; /* Stack elements vertically */
     }
 
     .data-section, .weather-section {
-        width: 25%; /* More sections or larger spacing on desktop */
+        flex-basis: 100%; /* Each section takes full width */
+        padding: 15px; /* Slightly more padding */
+    }
+
+    .image-section {
+        order: -1; /* Bring image section to the top */
     }
 }
