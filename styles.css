@@ -101,6 +101,7 @@ footer {
     .weathertext {
         top: 50%; /* Adjust position to avoid overlap */
         left: 50%;
+        flex-direction: column;
     }
 
     .data-section, .weather-section {
