@@ -86,24 +86,44 @@ footer {
 }
 
 @media (max-width: 600px) {
-    #hamburger {
-        display: block; 
+    body {
+        font-family: var(--font-main);
+        background-color: var(--background-color);
+        color: var(--text-color);
+        padding: 5px; /* Reduced padding */
     }
 
-    #navMenu {
-        display: none; 
+    header, footer {
+        padding: 8px; /* Smaller padding for header and footer */
+        font-size: 14px; /* Smaller font size */
     }
 
-    #navMenu.active {
-        display: block; 
+    .image-container {
+        height: 300px; /* Adjust height for smaller screens */
     }
 
-    nav ul {
-        display: flex;
-        flex-direction: column;
+    .datatext, .weathertext {
+        font-size: 18px; /* Smaller text for better readability */
+        top: 50%; /* Adjust positioning to avoid overlap */
     }
 
-    nav ul li {
-        margin-bottom: 10px;
+    .weathertext {
+        left: 50%; /* Adjust left position to prevent text going off screen */
+        transform: translate(-50%, -50%); /* Ensure the text is properly centered */
+    }
+
+    main {
+        flex-direction: column; /* Stack the sections vertically instead of horizontally */
+    }
+
+    .data-section, .weather-section {
+        flex-basis: 100%; /* Make each section full width */
+        margin-bottom: 10px; /* Add margin between sections */
+        padding: 15px; /* Increase padding for better readability */
+    }
+
+    .image-section img {
+        height: auto; /* Ensure the image scales correctly */
     }
 }
+
