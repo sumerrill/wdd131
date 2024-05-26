@@ -90,6 +90,7 @@ footer {
 
     .image-container {
         height: 300px; /* Less height as screen real estate is more valuable */
+        flex-direction: column;
     }
 
     .datatext, .weathertext {
@@ -100,10 +101,6 @@ footer {
     .weathertext {
         top: 50%; /* Adjust position to avoid overlap */
         left: 50%;
-    }
-
-    main {
-        flex-direction: column; /* Stack elements vertically */
     }
 
     .data-section, .weather-section {
