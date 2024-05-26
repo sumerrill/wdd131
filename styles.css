@@ -86,11 +86,24 @@ footer {
 }
 
 @media (max-width: 600px) {
-    main {
-        flex-direction: row;
+    #hamburger {
+        display: block; 
     }
 
-    .data-section, .weather-section, .image-section {
-        flex-basis: 100%;
+    #navMenu {
+        display: none; 
+    }
+
+    #navMenu.active {
+        display: block; 
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
     }
 }
