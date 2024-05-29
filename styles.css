@@ -64,7 +64,7 @@ footer {
     background-color: var(--secondary-color);
     color: var(--text-color);
     text-align: center;
-    padding: 10px;
+    padding: 10px; 
 }
 
 @media (max-width: 600px) {
@@ -87,5 +87,7 @@ footer {
 
     .data-section, .weather-section {
         flex-direction: column;
+        flex-basis: 100%; /* Each section takes full width */
+        padding: 15px; /* Slightly more padding */  
     }  
 }
