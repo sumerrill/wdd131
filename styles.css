@@ -34,7 +34,7 @@ header {
 
 .datatext {
     position: absolute; /* Positions the text over the image */
-    top: 35%; /* Centers the text vertically */
+    top: 30%; /* Centers the text vertically */
     right: 50%; /* Centers the text horizontally */
     transform: translate(-50%, -50%); /* Offset the text by half its width and height, centering it exactly */
     color: rgb(14, 11, 11); /* Text color */
@@ -44,7 +44,7 @@ header {
 
 .weathertext {
     position: absolute; /* Positions the text over the image */
-    top: 35%; /* Centers the text vertically */
+    top: 80%; /* Centers the text vertically */
     left: 80%; /* Centers the text horizontally */
     transform: translate(-50%, -50%); /* Offset the text by half its width and height, centering it exactly */
     color: rgb(14, 11, 11); /* Text color */
@@ -79,6 +79,7 @@ footer {
 
     .image-container {
         height: 300px; /* Less height as screen real estate is more valuable */
+        padding: 20px;
     }
 
     .datatext, .weathertext {
@@ -87,7 +88,7 @@ footer {
 
     .data-section, .weather-section {
         flex-basis: 100%; /* Each section takes full width */
-        padding: 15px; /* Slightly more padding */ 
-
+        padding: 15px; /* Slightly more padding */  
+        margin: 5px 0;
     }  
 }
