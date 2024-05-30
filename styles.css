@@ -24,6 +24,7 @@ header {
 .image-container img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .data-section, .weather-section {
@@ -32,6 +33,14 @@ header {
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+    position: absolute; /* Positions the text over the image */
+    top: 50%; /* Centers the text vertically */
+    left: 50%; /* Centers the text horizontally */
+    transform: translate(-50%, -50%); /* Offset the text by half its width and height, centering it exactly */
+    color: white; /* Text color */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Ensures the text is centered */
 }
 
 footer {
@@ -40,6 +49,31 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .data-section, .weather-section {
+        padding: 8px;
+        margin: 8px;
+        position: absolute; /* Positions the text over the image */
+        top: 50%; /* Centers the text vertically */
+        left: 50%; /* Centers the text horizontally */
+        transform: translate(-50%, -50%); /* Offset the text by half its width and height, centering it exactly */
+        color: white; /* Text color */
+        font-size: 24px; /* Adjust font size as needed */
+        font-weight: bold; /* Makes the text bold */
+        text-align: center; /* Ensures the text is centered */
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+        position: relative;
+    }
 }
 
 @media (min-width: 768px) {
