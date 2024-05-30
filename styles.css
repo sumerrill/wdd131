@@ -1,13 +1,14 @@
 :root {
-    --primary-color: #160a08; /* Red */
-    --secondary-color: #a89d5a; /* Green */
-    --text-color: #1d1111; /* White */
-    --background-color: #e9e8e3; /* Light grey */
+    --primary-color: #e0cdc9; /* Dark Brown */
+    --secondary-color: #996599; /* Olive Green */
+    --text-color: #1d1111; /* Almost Black */
+    --background-color: #e9e8e3; /* Light Grey */
     --font-main: 'Arial', sans-serif;
 }
 
 body {
     margin: 0;
+    padding: 10px;
     font-family: var(--font-main);
     background-color: var(--background-color);
     color: var(--text-color);
@@ -20,74 +21,46 @@ header {
     text-align: center;
 }
 
-.image-container {
-    position: relative; /* Establishes a positioning context for positioning the text */
-    width: 100%; /* Set the width to the desired value or make it responsive */
-    height: 100%; /* Adjust the height as needed */
-}
-
-.background-image {
-    width: 100%; /* Ensures the image covers the container */
-    height: 100%; /* Ensures the image covers the container */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-}
-
-.datatext {
-    position: absolute; /* Positions the text over the image */
-    top: 30%; /* Centers the text vertically */
-    right: 50%; /* Centers the text horizontally */
-    transform: translate(-50%, -50%); /* Offset the text by half its width and height, centering it exactly */
-    color: rgb(14, 11, 11); /* Text color */
-    font-size: 24px; /* Adjust font size as needed */
-    font-weight: bold; /* Makes the text bold */
-}
-
-.weathertext {
-    position: absolute; /* Positions the text over the image */
-    top: 80%; /* Centers the text vertically */
-    left: 80%; /* Centers the text horizontally */
-    transform: translate(-50%, -50%); /* Offset the text by half its width and height, centering it exactly */
-    color: rgb(14, 11, 11); /* Text color */
-    font-size: 24px; /* Adjust font size as needed */
-    font-weight: bold; /* Makes the text bold */
+.image-container img {
+    width: 100%;
+    height: auto;
 }
 
 .data-section, .weather-section {
-    background-color: var (--primary-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
-    padding: 20px;
-    border: 1px solid var(--primary-color);
-    flex-basis: 20%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
 }
 
 footer {
     background-color: var(--secondary-color);
     color: var(--text-color);
     text-align: center;
-    padding: 10px; 
+    padding: 10px;
+    font-size: 12px;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 768px) {
     body {
-        font-size: 14px; /* Increase base font size for better readability */
+        padding: 20px;
     }
 
     header, footer {
-        padding: 8px; /* Smaller padding */
-        font-size: 16px; /* Larger text in headers and footers for readability */
-    }
-
-    .image-container {
-        height: 300px; /* Less height as screen real estate is more valuable */
-    }
-
-    .datatext, .weathertext {
-        flex-direction: column;
+        padding: 15px;
+        font-size: 16px;
     }
 
     .data-section, .weather-section {
+        padding: 20px;
+        margin: 20px;
+        display: flex;
         flex-direction: column;
-        flex-basis: 100%; /* Each section takes full width */
-        padding: 15px; /* Slightly more padding */  
-    }  
+        align-items: center;
+    }
+
+    .image-container {
+        margin-bottom: 30px;
+    }
 }

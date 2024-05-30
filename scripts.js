@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('lastModified').textContent = formattedDate;
 });
 
-    const temperature = 10; // F
+    const temperature = 10; // °C
     const windSpeed = 5; // km/h
 
     function calculateWindChill(temperature, windSpeed) {
