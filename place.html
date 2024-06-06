@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myanmar - Detailed Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Myanmar</h1>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <!-- Example of using srcset for responsive images -->
+            <img src="images/myanmar_yangon_34337593.webp"
+                 srcset="images/myanmar_yangon_34337593.webp 480w,
+                         images/myanmar_yangon_34337593.webp 768w,
+                         images/myanmar_yangon_34337593.webp 1024w"
+                 sizes="(max-width: 480px) 480px,
+                        (max-width: 768px) 768px,
+                        1024px"
+                 alt="Lemurs in Madagascar">
+        </div>
+        <section class="data-section">
+            <h2>Data</h2>
+            <ul>
+                <li>Area: 676,578 sq km</li>
+                <li>Population: 54 million</li>
+                <li>Capital: Naypyidaw</li>
+                <li>Languages: Burmese</li>
+                <li>Currency: Burmese Kyat(MMK)</li>
+                <li>Time Zone: UTC+6:30</li>
+                <li>Calling Code: +95</li>
+                <li>Internet TLD: .mm</li>
+            </ul>
+        </section>
+        <section class="weather-section">
+            <h2>Weather ⛅</h2>
+            <div id="weather-info">
+                <p>Temperature: <span id="temperature">10°C</span></p>
+                <p>Conditions: Partly Cloudy</p>
+                <p>Wind: 5 km/h</p>
+                <p>Wind Chill: <span id="windChillDisplay">Calculating...</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2024</span> 🌺 <span id="name"> Su Myat Yadanar Shin </span> 🌺 <span id="location"> Myanmar </span></p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>
