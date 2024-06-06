@@ -1,0 +1,55 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#content {
+    width: 350px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1, footer {
+    background-color: #6a329f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+}
+
+.rating label {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 5px; /* Space between stars */
+}
+
+.rating input[type="radio"]:checked + label {
+    color: gold; /* Change star color when selected */
+}
+
+/* Optional: add hover effect for labels */
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
+label {
+    display: block; 
+}
